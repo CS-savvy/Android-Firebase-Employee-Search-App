@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+      <ScrollView
+          android:id="@+id/search_result"
+          android:layout_width="368dp"
+          android:layout_height="495dp">
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                  <EditText
+                      android:id="@+id/input"
+                      android:layout_width="match_parent"
+                      android:layout_height="46dp"
+                      android:layout_weight="1.30"
+                      android:hint="Type Here" />
+
+                  <RadioGroup
+                      android:id="@+id/G_1"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/name_search"
+                            android:layout_width="171dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/input"
+                            android:checked="true"
+                            android:text="search by name" />
+
+                        <RadioButton
+                            android:id="@+id/id_search"
+                            android:layout_width="167dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/name_search"
+                            android:text="search by ID" />
+                  </RadioGroup>
+
+                  <Button
+                      android:id="@+id/search_button"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/id_search"
+                      android:layout_marginTop="16dp"
+                      android:layout_weight="1.75"
+                      android:onClick="onButtonclicklistner"
+                      android:text="Search"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:id="@+id/textView2"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content" />
+
+            </LinearLayout>
+      </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
